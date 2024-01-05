@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border:1px solid black;
+        }
+        .third-col{
+            background-color: teal;
+        }
+        td{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <colgroup>
+        <col>
+        <col class="third-col">
+        <col>
+    </colgroup>
+    <thead>
+    <tr><th>월요일</th><th>수요일</th><th>금요일</th></tr>
+    </thead>
+    <tbody>
+    <tr><td rowspan="5">짜장면</td><td>짬뽕</td><td>탕수육</td></tr>
+    <tr><td>짬뽕</td><td>탕수육</td></tr>
+    <tr><td colspan="2">짬뽕</td></tr>
+    <tr><td>짬뽕</td><td>탕수육</td></tr>
+    <tr><td>짬뽕</td><td>탕수육</td></tr>
+    </tbody>
+</table>
+</body>
+</html>
