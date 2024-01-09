@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: flex;
+            width:500px;
+            height: 500px;
+            background-color: lightgray;
+            justify-content: space-between;
+        }
+
+        .blue, .green, .yellow{
+            width: 50px;
+            height: 50px;
+        }
+        .blue{
+            background-color: royalblue;
+        }
+        .green{
+            background-color: teal;
+        }
+        .yellow{
+            background-color: yellowgreen;
+        }
+        .left_side{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .right_side{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<article class="wrap">
+    <div class="left_side">
+        <div class="blue">a</div>
+        <div class="green">b</div>
+        <div class="yellow">c</div>
+    </div>
+    <div class="center">
+        <div class="blue">d</div>
+        <div class="yellow">e</div>
+    </div>
+    <div class="right_side">
+        <div class="blue">f</div>
+        <div class="green">g</div>
+        <div class="yellow">h</div>
+    </div>
+</article>
+</body>
+</html>
