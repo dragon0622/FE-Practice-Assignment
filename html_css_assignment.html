@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위니브 로그인</title>
+    <style>
+        /* common css */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .txt-hide {
+            clip-path: inset(50%);
+            width: 1px;
+            height: 1px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        /* common css end */
+
+
+        .cont-login {
+            margin: 20px auto;
+            width: 350px;
+            padding: 18px 15px 17px;
+            border: 1px solid #DBDBDB;
+            border-radius: 5px;
+        }
+
+        .cont-login .txt-login {
+            font-size: 12px;
+            color: black;
+            margin-bottom: 16px;
+        }
+
+        .cont-login .link-login {
+            display: block;
+            padding: 13px 0 12px;
+            background: #711BFF;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 17px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .link-login .img-login {
+            width: 57px;
+            height: 11px;
+            margin-right: 8px;
+        }
+
+        .cont-links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cont-links img {
+            vertical-align: bottom;
+        }
+
+        /* 가상요소를 만들어 점을 그려줍니다. */
+        .find .link-id::after {
+            display: inline-block;
+            content: '';
+            width: 1px;
+            height: 11px;
+            background: #767676;
+            /* 상하 정렬을 조정해줍니다. 오직 inline, inline-block 요소에서만 작동합니다. */
+            vertical-align: -1px;
+            margin-left: 5px;
+        }
+
+        .find .link-pw {
+            margin: 0;
+        }
+
+        .find [class^=link],
+        .join [class^=link] {
+            color: #767676;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+<article class="cont-login">
+    <h2 class="txt-hide">위니브 로그인</h2>
+    <p class="txt-login">더 편리해진 위니브에 오신 것을 환영합니다.</p>
+    <a href="#none" class="link-login"><img src="weniv-logo.png" alt="위니브" class="img-login">로그인</a>
+    <div class="cont-links">
+        <div class="find">
+            <img src="icon-lock.png" alt="" class="img-find">
+            <a href="#none" class="link-id">아이디</a>
+            <a href="#none" class="link-pw">비밀번호찾기</a>
+        </div>
+        <div class="join">
+            <img src="icon-user.png" alt="" class="img-join">
+            <a href="#none" class="link-join">회원가입</a>
+        </div>
+    </div>
+</article>
+</body>
+
+</html>
