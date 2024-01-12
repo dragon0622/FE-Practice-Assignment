@@ -9,16 +9,51 @@
         }
         .wrapper{
             flex-direction: column;
+
+        }
+        .background_img{
+            justify-content: center;
+            position: absolute;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .title .background_clock_img{
+            position: relative;
+            width: 265px;
+            height: 265px;
+        }
+
+        .main_img{
+            position: absolute;
+            width: 564px;
+        }
+        .better_than_yesterday{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .explain_bty{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
         }
     </style>
 </head>
 <body>
-<section class = "main">
+<section id = "main">
     <div class="wrapper">
-        <div class = "background_img">
-            <img src="background_clock.png" alt="">
+        <div class = "title">
+            <img class = "background_clock_img"src="background_clock.png" alt="">
             <div class="main_img" alt="">
                 <img src="Frame.png" alt ="">
+
             </div>
         </div>
 
