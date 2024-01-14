@@ -81,9 +81,13 @@
             url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
         }
 
-        *:not(.result-area){
-            font-family: 'GmarketSansMedium';
+        *{
+            /*font-family: 'GmarketSansMedium';*/
             color: #fff;
+        }
+
+        .area, .practice-hour{
+            color: black;
         }
 
         body{
@@ -270,7 +274,7 @@
             font-size: 12px;
         }
 
-        /* 모달 */
+
         .modal-wrap{
             width: 100%;
             height: 100vh;
@@ -340,19 +344,19 @@
                     최소한 1만 시간의 훈련이 필요하다는 법칙이다.
                 </p>
                 <div class="main-content-icon-hotspot">
-                    <span>&#8220;</span>
-                    <span>&#8221;</span>
+                    <span>"</span>
+                    <span>"</span>
                 </div>
             </div>
             <div class="main-content-interaction-section">
                 <div class="input-line">
                     나는
-                    <input id="area" type="text" placeholder="예)프로그래밍">
+                    <input id="area" class="area" type="text" placeholder="예)프로그래밍">
                     전문가가 될 것이다.
                 </div>
                 <div class="input-line">
                     그래서 앞으로 매일 하루에
-                    <input id="practice-hour" type="number" placeholder="예)5시간">
+                    <input id="practice-hour" class = "practice-hour" type="number" placeholder="예)5시간">
                     시간씩 훈련할 것이다.
                 </div>
                 <!-- 얼마나 많은 시간이 드는지?(how many time use) -->
@@ -388,15 +392,18 @@
     </div>
 </footer>
 
-<!--<section class="modal-wrap">-->
-<!--    <div id="modal">-->
-<!--        <h2>화이팅!!♥♥♥</h2>-->
-<!--        <h3>당신의 꿈을 응원합니다!</h3>-->
-<!--        <img src="라이캣.png" alt="귀여운라이켓">-->
-<!--        <button id="btn-modalclose">-->
-<!--            종료하고 진짜 훈련하러 가기 GO!GO!-->
-<!--        </button>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="modal-wrap">
+    <div id="modal">
+        <h2>화이팅!!♥♥♥</h2>
+        <h3>당신의 꿈을 응원합니다!</h3>
+        <img src="라이캣.png" alt="귀여운라이켓">
+        <button id="btn-modalclose">
+            종료하고 진짜 훈련하러 가기 GO!GO!
+        </button>
+    </div>
+</section>
+<script>
+
+</script>
 </body>
 </html>
