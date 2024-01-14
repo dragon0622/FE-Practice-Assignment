@@ -1,114 +1,402 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="./index.css">
     <style>
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        @font-face {
+            font-family: 'OTEnjoystoriesBA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Noto Sans KR';
+            font-style: normal;
+            font-weight: 400;
+            src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+            url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+            url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+        }
+
+        *:not(.result-area){
+            font-family: 'GmarketSansMedium';
+            color: #fff;
+        }
+
         body{
-            background-color: #5b2386;
+            width: 100vw;
+            background-color: #5B2386;
         }
-        .wrapper{
+
+        main{
+            width: 100%;
+        }
+
+        .wrap{
+            width: 100%;
+            display: flex;
             flex-direction: column;
+            align-items: center;
+        }
 
-        }
-        .background_img{
-            justify-content: center;
-            position: absolute;
-        }
-        .title{
+
+        .wrap > header{
+            margin-top: 120px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 50px;
         }
-        .title .background_clock_img{
+
+        .header-img-clock{
             position: relative;
-            width: 265px;
-            height: 265px;
         }
 
-        .main_img{
-            position: absolute;
+        .header-title-wrap{
             width: 564px;
-        }
-        .better_than_yesterday{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
+            position: absolute;
         }
 
-        .explain_bty{
+        .header-title-wrap > img{
+            width: 100%;
+            height: auto;
+        }
+
+        .main-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 메인 콘텐츠 내부 하위 타이틀 */
+        h2{
+            font-family: 'OTEnjoystoriesBA';
+            font-size: 36px;
+            font-weight: 700;
+            color: #F5DF4D;
+            margin-bottom: 78px;
+        }
+
+        /* 메인 콘텐츠 내부 타이틀 설명*/
+        .main-content-info-wrap{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            margin-bottom: 102px;
+        }
+
+        .main-content-info-wrap > p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+
+        .main-content-info-wrap > p > strong{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .main-content-icon-hotspot{
+            position: absolute;
+            width: 493px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-content-icon-hotspot > span{
+            font-size: 96px;
+            font-weight: 700;
+            color: #FCEE214D;
+        }
+
+        .main-content-interaction-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-line{
+            font-size: 24px;
+            margin-bottom: 27px;
+            word-wrap: break-word;
+        }
+
+        .input-line > input{
+            padding: 17px 41px 16px 39px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .btn-hmtu{
+            margin-top: 115px;
+            padding: 21px 49px;
+            border-radius: 20px;
+            background-color: #FCEE21;
+            font-size: 24px;
+            font-weight: 700;
+            color: #5B2386;
+            position: relative;
+        }
+
+        .btn-hmtu::after{
+            content:"";
+            position: absolute;
+            width: 64px;
+            height: 72px;
+            top: 14px;
+            right: -67px;
+            background-image: url("icon_point.png");
+            background-repeat: no-repeat;
+        }
+
+        /* 결과 섹션 */
+        .main-content-result{
+            margin-top: 150px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #result-area,
+        #result-day{
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        .next-result{
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .next-result > button{
+            padding: 21px 49px;
+            border-radius: 56px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #5B2386;
+        }
+
+        #btn-goto-practice{
+            background-color: #FCEE21;
+        }
+
+        #btn-share{
+            background-color: #fff;
+        }
+
+
+        /* 푸터 */
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 12px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer-notice{
+            font-family: 'Noto Sans KR';
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* 모달 */
+        .modal-wrap{
+            width: 100%;
+            height: 100vh;
+            z-index: 10;
+            background-color: rgba(21, 12, 12 ,0.3);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-wrap > #modal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 600px;
+            height: 600px;
+            border-radius: 20px;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        #modal > h2{
+            font-size: 96px;
+            font-weight: 700;
+            color: #5B2386;
+            margin-bottom: 10px;
+        }
+
+        #modal > h3{
+            font-family: 'OTEnjoystoriesBA';
+            font-size: 36px;
+            font-weight: 700;
+            color: #5B2386;
+        }
+
+        #modal > button{
+            margin-top: 20px;
+            padding: 21px 49px;
+            border-color: #FCEE21;
+            border-radius: 56px;
+            font-size: 24px;
+            font-weight: 700;
+            background-color: #FCEE21;
+            color: #5B2386;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
         }
     </style>
 </head>
 <body>
-<section id = "main">
-    <div class="wrapper">
-        <div class = "title">
-            <img class = "background_clock_img"src="background_clock.png" alt="">
-            <div class="main_img" alt="">
-                <img src="Frame.png" alt ="">
-
+<main>
+    <article class="wrap">
+        <header>
+            <img class="header-img-clock" src="background_clock.png" alt="헤더_시계_배경사진">
+            <div class="header-title-wrap">
+                <img src="Frame.png" alt="1만시간의법칙">
             </div>
-        </div>
-
-        <div class = "better_than_yesterday">
-            <img src="better_than_yesterday.png" alt="">
-        </div>
-        <div class = "explain_bty">
-            <div>
+        </header>
+        <section class="main-content">
+            <h2>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</h2>
+            <div class="main-content-info-wrap">
                 <p>
-                <strong>1만 시간의 법칙</strong>은 <br>
-                어떤 분야의 전문가가 되기 위해서는 <br>
-                최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                    <strong>1만 시간의 법칙</strong>은<br>
+                    어떤 분야의 전문가가 되기 위해서는<br>
+                    최소한 1만 시간의 훈련이 필요하다는 법칙이다.
                 </p>
-                <div>
-                    <img src="quotes_img" alt="">
+                <div class="main-content-icon-hotspot">
+                    <span>&#8220;</span>
+                    <span>&#8221;</span>
                 </div>
             </div>
+            <div class="main-content-interaction-section">
+                <div class="input-line">
+                    나는
+                    <input id="area" type="text" placeholder="예)프로그래밍">
+                    전문가가 될 것이다.
+                </div>
+                <div class="input-line">
+                    그래서 앞으로 매일 하루에
+                    <input id="practice-hour" type="number" placeholder="예)5시간">
+                    시간씩 훈련할 것이다.
+                </div>
+                <!-- 얼마나 많은 시간이 드는지?(how many time use) -->
+                <button class="btn-hmtu">
+                    나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+                </button>
+            </div>
+        </section>
 
-
-        </div>
-
-        <div class="user_input">
-            <p>나는
-                <input type="text" placeholder="예)프로그래밍">
-            전문가가 될 것이다.</p>
-            <br>
-            <p>
-                그래서 앞으로 매일 하루에
-            </p>
-            <br>
-            <p>
-                <input type="text" placeholder="예)5">
-                시간씩 훈련할 것이다.
-            </p>
-        </div>
-
-        <div class = "btn_wrap">
-            <button>
-                나는 며칠동안 훈련을 해야 <br>
-                1만 시간이 될까?
-            </button>
-            <img src="icon_point.png" alt="">
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <div class = "weniv_logo">
-        <img src="weniv-logo.png" alt="weniv-logo">
-    </div>
-    <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</br>
+        <section class="main-content-result">
+            <div class="input-line">
+                당신은 <span id="result-area"></span> 전문가가 되기 위해서
+            </div>
+            <div class="input-line">
+                대략 <span id="result-day"></span> 일 이상 훈련하셔야합니다! :)
+            </div>
+            <div class="next-result">
+                <button id="btn-goto-practice">
+                    훈련하러 가기 GO! GO!
+                </button>
+                <button id="btn-share">
+                    공유하기
+                </button>
+            </div>
+        </section>
+    </article>
+</main>
+<footer>
+    <img src="weniv-logo.png" alt="푸터-위니브로고">
+    <div class="footer-notice">
+        ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-    </p>
-</section>
-</div>
+    </div>
+</footer>
+
+<!--<section class="modal-wrap">-->
+<!--    <div id="modal">-->
+<!--        <h2>화이팅!!♥♥♥</h2>-->
+<!--        <h3>당신의 꿈을 응원합니다!</h3>-->
+<!--        <img src="라이캣.png" alt="귀여운라이켓">-->
+<!--        <button id="btn-modalclose">-->
+<!--            종료하고 진짜 훈련하러 가기 GO!GO!-->
+<!--        </button>-->
+<!--    </div>-->
+<!--</section>-->
 </body>
 </html>
