@@ -5,19 +5,100 @@
     <title>Title</title>
 </head>
 <body>
+<header>
+    <div>
+        <span>
+            <img src="" alt="호두 로고">
+        </span>
+        <ul class = "top_menu">
+            <li> <a href="" Home></a> </li>
+            <li> <a href="" About></a> </li>
+            <li> <a href="" Support></a> </li>
+            <li> <button type="button">Download</button> </li>
+        </ul>
+    </div>
+</header>
+<section>
+    <div>
+        <h1>Lorem ipsum is simply <br> dummy text of the printing and</h1>
+        <p>Lorem ipsum is simply dummy text of the printing and <br>
+        typesetting industry. <br>
+        Lorem ipsum has been the industry's standard dummy text <br>
+        ever since the 1500s, when an unknown</p>
+        <button type="button">Download</button>
+    </div>
+</section>
+<section class = "half_photo">
+    <div>
+        <img src="" alt="고양이 사진">
+        <h2>Lorem Ipsum is simply <br>
+            dummy text of the printing <br>
+            and dummy text
+        </h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. </p>
+    </div>
+</section>
+<section class = "gird_photo">
+    <div>
+        <h1>dummy text of the printing and dummy</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        </p>
+    </div>
+    <div>
+<!--그리드 형 사진 추가-->
+    </div>
+    <div>
+        <p>Continue exploring HODU</p>
+        <button type="button">Show more</button>
+    </div>
+</section>
+<section class="map">
+    <div id="map" style="width:100%;height:350px;"></div>
+</section>
+<section class="subscribe">
+    <div>
+        <div>
+            <p>Subscribe to our Blog post</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text
+            </p>
+        </div>
+        <div>
+            <input type="email" hidden="Enter your e-mail address" Subscribe>
+        </div>
+        <div class="background_hodu">
+            <img src="" alt="호두 배경">
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        <img src="" alt="호두 로고">
+    </div>
+    <div>
+        <ul>
+<!--            블로그, 인스타, 페북, 유튭 링크 추가-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</footer>
 <!-- 지도를 표시할 div 입니다 -->
-<div id="map" style="width:100%;height:350px;"></div>
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4405b7e894e64c0fc6e45af7fb3d79a9"></script>
-<script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-        mapOption = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-            level: 3 // 지도의 확대 레벨
-        };
+<!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4405b7e894e64c0fc6e45af7fb3d79a9"></script>-->
+<!--<script>-->
+<!--    var mapContainer = document.getElementById('map'), // 지도를 표시할 div-->
+<!--        mapOption = {-->
+<!--            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표-->
+<!--            level: 3 // 지도의 확대 레벨-->
+<!--        };-->
 
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    var map = new kakao.maps.Map(mapContainer, mapOption);
-</script>
+<!--    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다-->
+<!--    var map = new kakao.maps.Map(mapContainer, mapOption);-->
+<!--</script>-->
 </body>
 </html>
