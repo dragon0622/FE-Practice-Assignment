@@ -3,12 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .grid_image_list img{
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>picsum images</h1>
+    <ul class = "grid_image_list"></ul>
 <script>
-    let result = fetch('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json');
-    console.log(result);
+    const imageList = document.querySelector(".grid_image_list");
+
+    let pageToFetch = 1;
+    async function fetchImages(pageNum){
+        try {
+            const response = await fetch('https://picsum.photos/v2/list?page='+pageNum+'&limit=10');
+            if (!response.ok) {
+                throw new Error('네트워크 응답에 문제가 있습니다.');
+            }
+
+            const datas = await response.json();
+            console.log(datas);
+
+            makeImageList(datas);
+
+        } catch (error) {
+            console.error('데이터를 가져오는데 문제가 발생했습니다 :', error);
+        }
+    }
+
+    function makeImageList(datas){
+        datas.forEach((item)=>{
+            imageList.innerHTML += "<li><img src=" + item.download_url + " alt = ''></li>";
+        })
+    }
+
+    window.addEventListener("scroll", ()=>{
+        //스크롤이 상단으로부터 얼마나 떨어져있는가? (뷰포트의 높이 + 스크롤해서 내려간 길이)
+        //if 뷰포트의 높이 == 스크롤해서 내려간 길이 => 맨밑에 도착
+        //값에 + 10 정도를 더 줘서 미리 이미지 로딩
+        //페이지의 높이는 얼마인가?
+
+        if(window.innerHeight + document.documentElement.scrollTop + 10 >= document.documentElement.offsetHeight){
+            fetchImages(pageToFetch += 1);
+        }
+    });
+
+    fetchImages();
+
 </script>
 
 </body>
