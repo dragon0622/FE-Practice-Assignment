@@ -1,6 +1,7 @@
-
+/*bagie_background section 시작*/
 section{
     position: relative;
+    margin-left: 130px;
 }
 section .div{
     position: absolute;
@@ -9,3 +10,99 @@ a{
     text-decoration-line: none;
     color: inherit
 }
+.top_header {
+    display: flex;
+    align-items: center;
+}
+
+.top_header img {
+    margin-right: 500px; /* 조절 가능한 간격 */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+ul li {
+    margin-right: 10px; /* 조절 가능한 간격 */
+}
+
+.downloadBtn {
+    /* 버튼에 필요한 스타일링 추가 */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_page, .half_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro_page img {
+    width: 415px;
+    height: 766px;
+    top: 136px;
+    left: 1185px;
+}
+
+.half_photo img {
+    width: 660px;
+    height: 390px;
+    top: 1060px;
+    left: 320px;
+    border-radius: 30px;
+
+}
+
+.baige_background{
+    background: #F2E9D8;
+    margin: 0; /* 섹션의 margin을 0으로 설정 */
+    padding: 0; /* 섹션의 padding을 0으로 설정 */
+    box-sizing: border-box; /* 박스 모델의 크기 계산 방식을 변경 */
+    width: 100%;
+    height: 100%;
+}
+
+.intro_page_explain, .half_photo_explain{
+    text-align: left;
+}
+
+.grid_photo{
+    h1{
+        color: #D97652;
+    }
+}
+
+.downloadBtn{
+    background-color: #D97652;
+    color: aliceblue;
+    border-radius: 40px;
+    width: 140px;
+    height: 50px;
+}
+
+.plain_text{
+    font-size: 16px;
+}
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+
