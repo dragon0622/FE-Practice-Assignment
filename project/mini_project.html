@@ -6,20 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="baige_background">
-        <div class = "top_header">
-            <span>
-                <img src="hodu_logo.png" alt="호두 로고">
-            </span>
-            <span>
-                <ul class = "top_menu">
-                    <li> <a href="" >Home</a> </li>
-                    <li> <a href="" >About</a> </li>
-                    <li> <a href="" >Support</a> </li>
-                    <li> <button type="button" class="downloadBtn">Download</button> </li>
-                </ul>
-            </span>
+<div class = "wrap_top">
+<section class = "baige_background">
+    <div class = "top_header">
+        <div>
+            <img src="hodu_logo.png" alt="호두 로고">
         </div>
+        <div>
+            <ul class = "top_menu">
+                <li> <a href="#" >Home</a> </li>
+                <li> <a href="#" >About</a> </li>
+                <li> <a href="#" >Support</a> </li>
+                <li> <button type="button" class="OrangeBtn">Download</button> </li>
+            </ul>
+        </div>
+    </div>
     <div class = "intro_page">
         <div class="intro_page_explain">
             <h1>Lorem ipsum is simply <br> dummy text of the printing and</h1>
@@ -27,11 +28,12 @@
             typesetting industry. <br>
             Lorem ipsum has been the industry's standard dummy text <br>
             ever since the 1500s, when an unknown</p>
-            <button type="button" class="downloadBtn" > Download</button>
+            <button type="button" class="OrangeBtn" > Download</button>
         </div>
         <img src="head_in_box.png" alt="고양이 사진">
     </div>
 </section>
+</div>
 <section class = "half_photo">
     <img src="lying_hodu.png" alt="고양이 사진">
     <div class="half_photo_explain">
@@ -42,9 +44,9 @@
         <p class = "plain_text">Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. </p>
     </div>
 </section>
-<section class = "gird_photo">
-    <div>
-        <h1>dummy text of the printing and dummy</h1>
+<section class = "grid_photo">
+    <div class = "grid_text">
+        <h1 class = "grid_h1">dummy text of the printing and dummy</h1>
         <p class = "plain_text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -55,31 +57,42 @@
     </div>
     <div>
         <p>Continue exploring HODU</p>
-        <button type="button" class="downloadBtn">Show more</button>
+        <button type="button" class="OrangeBtn">Show more</button>
     </div>
+    <hr/>
 </section>
-<section class="map">
+<section class = "map">
     <p>Where you'll be</p>
     <p class = "plain_text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
     <div id="map" style="width:100%;height:350px;"></div>
 </section>
-<section class="subscribe">
-    <div>
-        <div>
+<section class = "subscribe">
+    <div class = "subscribe_elements">
+        <div class = "subscribe_explain">
             <p>Subscribe to our Blog post</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                 Lorem Ipsum has been the industry's standard dummy text
             </p>
         </div>
-        <div>
-            <form>
-                <input type="email" hidden="Enter your e-mail address" Subscribe>
-            </form>
-        </div>
-        <div class="background_hodu">
-            <img src="background_hodu.png" alt="호두 배경">
+        <div class="email_input">
+            <img src="mail.svg" alt="메일 이미지" class="mail_img">
+            <input type="text" placeholder="Enter your e-mail address">
+            <button id="open_modal" class="OrangeBtn">Subscribe</button>
         </div>
     </div>
+    <div id = "contentsOfModal">
+        <img src="hodu_face.png" alt="" class="hodu_face">
+        <p>Thank you!</p>
+        <p>lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button id = "close_modal" class="OrangeBtn">OK! I Love HODU</button>
+    </div>
+    <div class="background_hodu">
+            <img src="background_hodu.png" alt="호두 배경">
+        </div>
+    <a href="scroll-top-btn.png" class ="GoUp">
+            <img src="" alt="위로 올라가기">
+        </a>
+
 </section>
 <footer>
     <div>
@@ -96,16 +109,20 @@
 </footer>
 <!-- 지도를 표시할 div 입니다 -->
 
-<!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4405b7e894e64c0fc6e45af7fb3d79a9"></script>-->
-<!--<script>-->
-<!--    var mapContainer = document.getElementById('map'), // 지도를 표시할 div-->
-<!--        mapOption = {-->
-<!--            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표-->
-<!--            level: 3 // 지도의 확대 레벨-->
-<!--        };-->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4405b7e894e64c0fc6e45af7fb3d79a9"></script>
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
 
-<!--    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다-->
-<!--    var map = new kakao.maps.Map(mapContainer, mapOption);-->
-<!--</script>-->
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    let map = new kakao.maps.Map(mapContainer, mapOption);
+    var mapTypeControl = new kakao.maps.MapTypeControl();
+    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+    var zoomControl = new kakao.maps.ZoomControl();
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+</script>
 </body>
 </html>

@@ -1,22 +1,11 @@
-/*bagie_background section 시작*/
 section{
     position: relative;
-    margin-left: 130px;
-}
-section .div{
-    position: absolute;
+    width: 1278px;
+    margin: 0px;
 }
 a{
     text-decoration-line: none;
     color: inherit
-}
-.top_header {
-    display: flex;
-    align-items: center;
-}
-
-.top_header img {
-    margin-right: 500px; /* 조절 가능한 간격 */
 }
 
 ul {
@@ -28,8 +17,32 @@ ul {
 }
 
 ul li {
-    margin-right: 10px; /* 조절 가능한 간격 */
+    margin-right: 10px;
 }
+
+/*bagie_background section 시작*/
+.wrap_top{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F2E9D8;
+    margin-bottom: 80px;
+}
+.top_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_header img {
+    margin-right: 500px;
+}
+
+p.gird_h1{
+        font-size: 40px;
+        color: orange;
+}
+
 
 .downloadBtn {
     /* 버튼에 필요한 스타일링 추가 */
@@ -38,7 +51,6 @@ ul li {
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -54,39 +66,49 @@ body{
 .intro_page img {
     width: 415px;
     height: 766px;
-    top: 136px;
-    left: 1185px;
+    margin-left: 170px;
 }
-
+/*bagie_background section 끝*/
+/*half_photo section 시작*/
 .half_photo img {
     width: 660px;
     height: 390px;
-    top: 1060px;
-    left: 320px;
     border-radius: 30px;
-
+    margin-right: 110px;
 }
 
 .baige_background{
-    background: #F2E9D8;
-    margin: 0; /* 섹션의 margin을 0으로 설정 */
-    padding: 0; /* 섹션의 padding을 0으로 설정 */
-    box-sizing: border-box; /* 박스 모델의 크기 계산 방식을 변경 */
-    width: 100%;
-    height: 100%;
-}
 
+
+}
+/*half_photo section 끝*/
 .intro_page_explain, .half_photo_explain{
     text-align: left;
 }
+/*grid_photo section 시작*/
 
+
+
+.grid_h1{
+    font-size: 32px;
+    color: #D97652;
+}
 .grid_photo{
-    h1{
-        color: #D97652;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.downloadBtn{
+hr{
+        width: 1278px;
+        color: #C4C4C4;
+        height: 1px;
+        margin: 50px auto;
+}
+/*grid_photo section 끝*/
+
+.OrangeBtn{
     background-color: #D97652;
     color: aliceblue;
     border-radius: 40px;
@@ -104,5 +126,89 @@ h1{
 h2{
     font-size: 36px;
 }
+/*구독 session 시작*/
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe_elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 58px;
+    width: 1280px;
+    background-color: #263140;
+    border-radius: 30px;
+    color:white;
+    position: relative;
+    top:100px;
+    z-index: 1;
+}
+
+.subscribe_explain{
+    width: 471px;
+}
+.email_input{
+    width: 530px;
+    height: 60px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 6px;
+    border-radius: 60px;
+    input{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #767676;
+        margin-left: 16px;
+        border : 0;
+    }
+}
+.mail_img{
+    margin-left: 28px;
+}
+
+/*구독 session 끝*/
+
+/*footer 시작*/
+footer{
+
+    padding: 0;
+    box-sizing: border-box;
+    width: 1278px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    justify-content: space-around;
+}
+/*footer 끝*/
+
+
+/*modal 시작*/
+#contentsOfModal{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 100;
+    background-image: url("modal_background.png");
+    top: 50%;
+
+
+
+    button{
+        margin-bottom: 40px;
+    }
+}
+
 
 
