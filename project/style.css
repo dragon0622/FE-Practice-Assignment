@@ -108,13 +108,14 @@ body{
 }
 
 .grid_frame > img{
-    width: 200px;
-    height: 200px;
+    width: 378px;
+    height: 378px;
 }
 
-div.grid_frame img{
-
+.grid_frame img:nth-child(2){
+    margin: 0 42px;
 }
+
 
 hr{
         width: 1278px;
