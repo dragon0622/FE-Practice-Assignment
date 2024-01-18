@@ -52,6 +52,8 @@ body{
     align-items: center;
 }
 
+
+
 .intro_page, .half_photo{
     display: flex;
     justify-content: center;
@@ -73,6 +75,10 @@ body{
     border-radius: 30px;
     margin-right: 110px;
     object-fit : cover;
+}
+
+.half_photo{
+    margin-bottom: 110px;
 }
 
 .baige_background{
@@ -114,6 +120,14 @@ body{
 
 .grid_frame img:nth-child(2){
     margin: 0 42px;
+}
+
+.grid_frame{
+    margin-bottom: 42px;
+}
+
+.grid_frame:first-child{
+    margin-top: 70px;
 }
 
 
@@ -202,7 +216,20 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 130px;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+
+.GoUp:hover img{
+    content: url("scroll-top-btnAfter.png");
+}
+
+.GoUp{
+    display: flex;
+    margin: 19px 24px;
+    position: absolute;
+    bottom:0;
+    right:-330px;
 }
 /*footer 끝*/
 
@@ -220,8 +247,6 @@ footer{
     z-index: 100;
     background-image: url("modal_background.png");
     top: 50%;
-
-
 
     button{
         margin-bottom: 40px;
