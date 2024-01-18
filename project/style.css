@@ -23,7 +23,7 @@ ul li {
 /*bagie_background section 시작*/
 .wrap_top{
     margin: 0;
-    padding: 0;
+    padding: 0 20%;
     box-sizing: border-box;
     background: #F2E9D8;
     margin-bottom: 80px;
@@ -43,10 +43,6 @@ p.gird_h1{
         color: orange;
 }
 
-
-.downloadBtn {
-    /* 버튼에 필요한 스타일링 추가 */
-}
 
 body{
     display: flex;
@@ -69,12 +65,14 @@ body{
     margin-left: 170px;
 }
 /*bagie_background section 끝*/
+
 /*half_photo section 시작*/
 .half_photo img {
     width: 660px;
     height: 390px;
     border-radius: 30px;
     margin-right: 110px;
+    object-fit : cover;
 }
 
 .baige_background{
@@ -87,6 +85,15 @@ body{
 }
 /*grid_photo section 시작*/
 
+.explore_explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
 
 
 .grid_h1{
@@ -114,6 +121,7 @@ hr{
     border-radius: 40px;
     width: 140px;
     height: 50px;
+    border: none;
 }
 
 .plain_text{
@@ -191,7 +199,7 @@ footer{
 
 /*modal 시작*/
 #contentsOfModal{
-    display: flex;
+    display: none;
     width: 600px;
     height: 400px;
     flex-direction: column;

@@ -55,7 +55,7 @@
     <div>
 <!--그리드 형 사진 추가-->
     </div>
-    <div>
+    <div class = "explore_explain">
         <p>Continue exploring HODU</p>
         <button type="button" class="OrangeBtn">Show more</button>
     </div>
@@ -76,7 +76,7 @@
         </div>
         <div class="email_input">
             <img src="mail.svg" alt="메일 이미지" class="mail_img">
-            <input type="text" placeholder="Enter your e-mail address">
+            <input type="email" class="emailAddr" placeholder="Enter your e-mail address">
             <button id="open_modal" class="OrangeBtn">Subscribe</button>
         </div>
     </div>
@@ -124,5 +124,6 @@
     var zoomControl = new kakao.maps.ZoomControl();
     map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 </script>
+<script src="modal.js"></script>
 </body>
 </html>
