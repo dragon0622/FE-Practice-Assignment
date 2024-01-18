@@ -100,10 +100,19 @@ body{
     font-size: 32px;
     color: #D97652;
 }
-.grid_photo{
+.grid_photo_section{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.grid_frame > img{
+    width: 200px;
+    height: 200px;
+}
+
+div.grid_frame img{
 
 }
 
