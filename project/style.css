@@ -125,16 +125,17 @@ body{
     margin: -18px
 }
 
-.three_img{
+.three_img_new{
     display: flex;
     gap: 72px;
     padding: 36px;
 }
 
-.three_img > img{
+.three_img_new > img{
     width: 378px;
     height: 378px;
     border-radius: 30px;
+    box-shadow: 10px 10px 20px grey;
 }
 
 .grid_frame {

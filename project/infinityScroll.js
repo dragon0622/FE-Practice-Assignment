@@ -35,10 +35,10 @@ async function fetchImages(pageNum) {
 function makeImageList(datas) {
     let img_dummy = '';
     datas.forEach((item, index) => {
-        img_dummy += `<img src="${item.url}" alt="">`;
+        img_dummy += `<img src="${item.url}" alt="" class="cat_img">`;
         if ((index + 1) % 3 === 0) {
             // 3개씩 그룹화된 경우, 현재 그룹을 추가하고 초기화
-            gridFrame.innerHTML += `<div class = 'three_img'>${img_dummy}</div>`;
+            gridFrame.innerHTML += `<div class = 'three_img_new'>${img_dummy}</div>`;
             img_dummy = '';
         }
     })
