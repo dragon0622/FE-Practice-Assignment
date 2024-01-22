@@ -20,10 +20,15 @@ ul li {
     margin-right: 10px;
 }
 
+.grid_frame img{
+    width: 378px;
+    height: 378px;
+    border-radius: 16px;
+}
+
 /*bagie_background section 시작*/
 .wrap_top{
-    margin: 0;
-    padding: 0 20%;
+    padding: 31px 20% 0 20%;
     box-sizing: border-box;
     background: #F2E9D8;
     margin-bottom: 80px;
@@ -113,23 +118,25 @@ body{
 
 }
 
-.grid_frame > img{
-    width: 378px;
-    height: 378px;
-}
+
 
 .grid_frame img:nth-child(2){
     margin: 0 42px;
 }
 
-.grid_frame{
+.grid_frame {
     margin-bottom: 42px;
 }
+/*new*/
 
 .grid_frame:first-child{
     margin-top: 70px;
 }
 
+.plus_photo{
+    width: 378px;
+    height: 378px;
+}
 
 hr{
         width: 1278px;
@@ -137,6 +144,7 @@ hr{
         height: 1px;
         margin: 50px auto;
 }
+
 /*grid_photo section 끝*/
 
 .OrangeBtn{
@@ -235,7 +243,7 @@ footer{
 
 
 /*modal 시작*/
-#contentsOfModal{
+#contentsOfModal {
     display: none;
     width: 600px;
     height: 400px;
@@ -248,7 +256,7 @@ footer{
     background-image: url("modal_background.png");
     top: 50%;
 
-    button{
+    button {
         margin-bottom: 40px;
     }
 }

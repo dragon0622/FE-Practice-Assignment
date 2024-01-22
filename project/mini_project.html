@@ -53,22 +53,25 @@
         </p>
     </div>
     <div class="grid_photo">
+
 <!--그리드 형 사진 추가-->
         <div class="grid_frame">
-            <img src="img_1.png" alt = "">
-            <img src="img_2.png" alt = "">
-            <img src="img_3.png" alt = "">
-        </div>
-        <div class="grid_frame">
-            <img src="img_1%20(1).png" alt = "">
-            <img src="img_2%20(2).png" alt = "">
-            <img src="img_3%20(1).png" alt = "">
+            <div class = "three_img">
+                <img id="cat1" src="img_1.png" alt = "">
+                <img id="cat2" src="img_2.png" alt = "">
+                <img id="cat3" src="img_3.png" alt = "">
+            </div>
+            <div class = "three_img">
+                <img id="cat4" src="img_1%20(1).png" alt = "">
+                <img id="cat5" src="img_2%20(2).png" alt = "">
+                <img id="cat6" src="img_3%20(1).png" alt = "">
+            </div>
         </div>
     </div>
     <div class = "explore_explain">
         <p>Continue exploring HODU</p>
-        <button type="button" class="OrangeBtn">Show more</button>
     </div>
+    <button type="button" class="OrangeBtn" id="showMoreBtn">Show more</button>
     <hr/>
 </section>
 <section class = "map">
@@ -136,5 +139,6 @@
 </script>
 <script src="modal.js"></script>
 <script src="GoUpBtn.js"></script>
+<script src="infinityScroll.java.js"></script>
 </body>
 </html>
