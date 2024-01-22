@@ -229,7 +229,7 @@ footer{
 
 
 .GoUp:hover img{
-    content: url("scroll-top-btnAfter.png");
+    content: url("hodu_img/scroll-top-btnAfter.png");
 }
 
 .GoUp{
@@ -253,7 +253,7 @@ footer{
     border-radius: 30px;
     position: fixed;
     z-index: 100;
-    background-image: url("modal_background.png");
+    background-image: url("hodu_img/modal_background.png");
     top: 50%;
 
     button {
