@@ -20,11 +20,6 @@ ul li {
     margin-right: 10px;
 }
 
-.grid_frame img{
-    width: 378px;
-    height: 378px;
-    border-radius: 16px;
-}
 
 /*bagie_background section 시작*/
 .wrap_top{
@@ -86,14 +81,12 @@ body{
     margin-bottom: 110px;
 }
 
-.baige_background{
-
-
-}
 /*half_photo section 끝*/
 .intro_page_explain, .half_photo_explain{
     text-align: left;
 }
+
+
 /*grid_photo section 시작*/
 
 .explore_explain {
@@ -119,9 +112,29 @@ body{
 }
 
 
+.three_img_top, .three_img_bottom {
+    display: flex;
+    gap: 55px;
+    padding: 36px;
 
-.grid_frame img:nth-child(2){
-    margin: 0 42px;
+}
+.three_img_top > img, .three_img_bottom > img {
+    width: 430px;
+    height: 430px;
+    border-radius: 30px;
+    margin: -18px
+}
+
+.three_img{
+    display: flex;
+    gap: 72px;
+    padding: 36px;
+}
+
+.three_img > img{
+    width: 378px;
+    height: 378px;
+    border-radius: 30px;
 }
 
 .grid_frame {
@@ -133,16 +146,11 @@ body{
     margin-top: 70px;
 }
 
-.plus_photo{
-    width: 378px;
-    height: 378px;
-}
-
 hr{
-        width: 1278px;
-        color: #C4C4C4;
-        height: 1px;
-        margin: 50px auto;
+    width: 1278px;
+    color: #C4C4C4;
+    height: 1px;
+    margin: 50px auto;
 }
 
 /*grid_photo section 끝*/
