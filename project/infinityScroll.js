@@ -8,11 +8,17 @@ showMoreBtn.addEventListener('click', function (){
     if(flag) {
         fetchImages(pageToFetch++);
         window.addEventListener('scroll', infinityScroll);
-        showMoreBtn.innerText = 'Stop';
+        showMoreBtn.innerText = 'Show stop';
+        showMoreBtn.style.position = 'fixed';
+        showMoreBtn.style.bottom = '30px';
+        showMoreBtn.style.zIndex = '999';
         flag=false;
     }else {
         window.removeEventListener('scroll', infinityScroll);
         showMoreBtn.innerText = 'Show more';
+        showMoreBtn.style.position = '';
+        showMoreBtn.style.bottom = '';
+        showMoreBtn.style.zIndex = '';
         flag=true;
     }
 });
