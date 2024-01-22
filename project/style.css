@@ -21,7 +21,7 @@ ul li {
 }
 
 
-/*bagie_background section 시작*/
+/*wrap_top 시작*/
 .wrap_top{
     padding: 31px 0 0 0;
     box-sizing: border-box;
@@ -33,6 +33,15 @@ ul li {
 .wrap_top > *{
     margin: 0 Auto;
 }
+
+.wrap_middle > *{
+    margin: 0 Auto;
+}
+
+.wrap_bottom > *{
+    margin: 0 Auto;
+}
+
 .top_header {
     display: flex;
     align-items: center;
@@ -56,6 +65,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
+.wrap_middle{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 68px;
+}
+
 
 
 
@@ -156,7 +173,7 @@ hr{
     width: 1278px;
     color: #C4C4C4;
     height: 1px;
-    margin: 50px auto;
+    margin: 80px 0 0 0;
 }
 
 /*grid_photo section 끝*/
@@ -181,6 +198,11 @@ h2{
     font-size: 36px;
 }
 /*구독 session 시작*/
+
+.wrap_bottom{
+    box-sizing: border-box;
+    width: 100%;
+}
 
 .subscribe{
     display: flex;
