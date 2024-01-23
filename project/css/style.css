@@ -39,9 +39,13 @@ ul li {
     margin: 0 Auto;
 }
 
+/*wrap_middle 시작*/
+
 .wrap_middle > *{
     margin: 0 Auto;
 }
+
+/*wrap_bottom 시작*/
 
 .wrap_bottom > *{
     margin: 0 Auto;
@@ -120,6 +124,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Pretendard-Bold', sans-serif;
     p{
         font-size: 24px;
         line-height: 30px;
@@ -128,7 +133,9 @@ body{
 
 
 .grid_h1{
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Pretendard-Bold', sans-serif;
     color: #D97652;
 }
 .grid_photo_section{
@@ -190,17 +197,30 @@ hr{
     width: 140px;
     height: 50px;
     border: none;
+    font-family: 'Pretendard-Bold', sans-serif;
+    line-height: 20px;
 }
 
 .plain_text{
     font-size: 16px;
+    line-height: 20px;
 }
 h1{
     font-size: 48px;
+    line-height: 60px;
+    font-family: 'Pretendard-Bold', sans-serif;
 }
 
 h2{
     font-size: 36px;
+    line-height: 45px;
+    font-family: 'Pretendard-Bold', sans-serif;
+}
+
+.map_title{
+    font-size: 36px;
+    line-height: 45px;
+    font-family: 'Pretendard-Bold', sans-serif;
 }
 /*구독 session 시작*/
 
@@ -228,6 +248,18 @@ h2{
     z-index: 1;
 }
 
+.subscribe_title{
+    font-size: 36px;
+    line-height: 45px;
+    font-family: 'Pretendard-Bold', sans-serif;
+
+}
+.subscribe_sentence{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
 .subscribe_explain{
     width: 471px;
 }
@@ -243,7 +275,7 @@ h2{
     input{
         width: 100%;
         font-size: 16px;
-        font-weight: 400;
+        line-height: 20px;
         color: #767676;
         margin-left: 16px;
         border : 0;
