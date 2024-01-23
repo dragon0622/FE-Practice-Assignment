@@ -199,11 +199,20 @@ hr{
     border: none;
     font-family: 'Pretendard-Bold', sans-serif;
     line-height: 20px;
+    font-size: 16px;
 }
 
 .plain_text{
     font-size: 16px;
     line-height: 20px;
+}
+.plain_text_center{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    .orange{
+        color: #D97652;
+    }
 }
 h1{
     font-size: 48px;
