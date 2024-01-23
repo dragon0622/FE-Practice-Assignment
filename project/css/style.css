@@ -1,7 +1,7 @@
-/**:not(#map){*/
-/*    font-size: 16px;*/
-/*    font-family: 'Pretendard-Regular', sans-serif;*/
-/*}*/
+body{
+    font-size: 16px;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
 
 section{
     position: relative;
