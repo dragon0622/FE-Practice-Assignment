@@ -1,7 +1,11 @@
+*{
+    font : 16px Pretendard-Regular;
+}
+
 section{
     position: relative;
     width: 1278px;
-    margin: 0px;
+    margin: 0;
 }
 a{
     text-decoration-line: none;
@@ -191,7 +195,7 @@ hr{
     font-size: 16px;
 }
 h1{
-    font-size: 48px;
+    font : 48px Pretendard_Bold;
 }
 
 h2{
