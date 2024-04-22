@@ -58,6 +58,12 @@
 <br>
 <br>
 
+
 ## 프로젝트 중 문제점
 <p> map.js와 카카오 api 를 적용하던 중 스크립트 파일이 저장되고 실행되는 속도로 인해 오류가 간헐적으로 발생 </p>
 <p>-> html 태그 내부에 script 위치의 중요성, script 종류 중 defer, async의 용도를 알게 됨</p>
+
+### 상장
+프로젝트 장려상 수상
+
+![image](https://github.com/dragon0622/FE-Practice-Assignment/assets/141225643/44ddad57-f473-4d88-affb-5ea134adf924)
